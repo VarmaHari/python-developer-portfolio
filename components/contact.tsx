@@ -14,7 +14,7 @@ export function Contact() {
     {
       icon: GithubIcon,
       label: 'GitHub',
-      value: `github.com/${siteConfig.githubUsername}`,
+      value: siteConfig.githubUrl.replace('https://', ''),
       href: siteConfig.githubUrl,
       external: true,
     },

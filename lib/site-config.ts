@@ -6,7 +6,7 @@ export const siteConfig = {
   location: 'Remote',
   email: 'your.email@example.com',
   githubUsername: 'VarmaHari',
-  githubUrl: 'https://github.com/VarmaHari',
+  githubUrl: 'https://github.com/VarmaHari/python-developer-portfolio',
 }
 
 export const navLinks = [
