@@ -14,7 +14,7 @@ export function Contact() {
     {
       icon: GithubIcon,
       label: 'GitHub',
-      value: `github.com/${siteConfig.githubUsername}`,
+      value: siteConfig.githubUrl.replace('https://', ''),
       href: siteConfig.githubUrl,
       external: true,
     },
@@ -41,7 +41,7 @@ export function Contact() {
 
           <ul className="relative mx-auto mt-10 grid max-w-2xl gap-4 sm:grid-cols-2">
             {channels.map(({ icon: Icon, label, value, href, external }) => (
-              <li key={label}>
+              <li key={label} className="min-w-0">
                 <a
                   href={href}
                   {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}

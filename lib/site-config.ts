@@ -5,8 +5,8 @@ export const siteConfig = {
   role: 'Python Backend Developer',
   location: 'Remote',
   email: 'your.email@example.com',
-  githubUsername: 'your-github-username',
-  githubUrl: 'https://github.com/your-github-username',
+  githubUsername: 'VarmaHari',
+  githubUrl: 'https://github.com/VarmaHari/python-developer-portfolio',
 }
 
 export const navLinks = [
