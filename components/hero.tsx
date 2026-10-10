@@ -56,20 +56,23 @@ export function Hero() {
             backends that stay fast and reliable as they grow.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <a
               href="#projects"
-              className="group inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-primary/40"
+              className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-7 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/30 ring-1 ring-inset ring-white/10 transition-all hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-xl hover:shadow-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:translate-y-0 sm:w-auto"
             >
-              View my work
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+              View My Projects
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform group-hover:translate-x-1"
+              />
             </a>
             <a
               href="#contact"
-              className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-secondary/60 px-6 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:bg-secondary"
+              className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-primary/40 bg-secondary/60 px-7 text-base font-semibold text-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:translate-y-0 sm:w-auto"
             >
-              <Mail className="size-4" />
-              Get in touch
+              <Mail aria-hidden="true" className="size-4 text-accent" />
+              Contact Me
             </a>
           </div>
         </div>
